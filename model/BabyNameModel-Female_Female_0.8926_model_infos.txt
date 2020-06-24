@@ -1,0 +1,41 @@
+training_infos:
+{
+  "total_epochs": 50,
+  "loss": 0.8926133513450623,
+  "acc": 0.6810846328735352,
+  "trainset_infos": {
+    "target_group": "Female",
+    "length_of_sequence": 5,
+    "number_of_chars": 57,
+    "m": 55579,
+    "padding_start": "#",
+    "padding_end": "*"
+  }
+}
+history["hyperparams"]:
+[
+  [
+    0,
+    {
+      "lr": 0.003,
+      "loss": "categorical_crossentropy",
+      "batch_size": 32
+    }
+  ]
+]
+Model: "model"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         [(None, 5, 57)]           0         
+_________________________________________________________________
+lstm (LSTM)                  (None, 64)                31232     
+_________________________________________________________________
+dense (Dense)                (None, 57)                3705      
+_________________________________________________________________
+activation (Activation)      (None, 57)                0         
+=================================================================
+Total params: 34,937
+Trainable params: 34,937
+Non-trainable params: 0
+_________________________________________________________________
